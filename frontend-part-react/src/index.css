@@ -1,57 +1,19 @@
-@import "tailwindcss";
-
-/* @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"); */
-
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-@theme {
-	/* --font-display: "Inter", sans-serif; */
+@import "tailwindcss";
+
+:root {
 	--font-display: "Poppins", sans-serif;
-
-	--color-primary: #635bff;
-	--color-primary-dark: #5145e5;
-
-	--color-background: #f8f9fc;
-	--color-surface: #ffffff;
-
-	--color-heading: #1e293b;
-	--color-body: #64748b;
-	--color-border: #e2e8f0;
-
-	--color-success: #16a34a;
-	--color-warning: #f59e0b;
-	--color-danger: #ef4444;
+	--breakpoint-3xl: 1920px;
+	--color-primary: #2172f0;
 }
 
 @layer base {
-	* {
-		box-sizing: border-box;
-	}
-
-	body {
-		margin: 0;
-		min-width: 320px;
+	html {
 		font-family: var(--font-display);
-		background: var(--color-background);
-		color: var(--color-body);
+	}
+	body {
+		background-color: #ffffff;
 		overflow-x: hidden;
-	}
-
-	h1,
-	h2,
-	h3,
-	h4 {
-		color: var(--color-heading);
-		font-weight: 700;
-	}
-
-	button {
-		cursor: pointer;
-	}
-
-	input,
-	textarea,
-	select {
-		font: inherit;
 	}
 }
